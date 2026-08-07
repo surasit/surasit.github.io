@@ -4,11 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- นำเข้าฟอนต์ Kanit จาก Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Hello World!</h1>
-    <p>Welcome to my Portfolio.</p>
+    <!-- แถบเมนูด้านบน (Navigation Bar) -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">เกี่ยวกับฉัน</a></li>
+            <li><a href="#skills">ทักษะ</a></li>
+            <li><a href="#projects">ผลงาน</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <!-- ส่วนแนะนำตัว (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>สวัสดีครับ, ผม <span class="highlight">[ชื่อของคุณ]</span></h1>
+            <p>Developer / Designer ผู้หลงใหลในการสร้างสรรค์ผลงานดิจิทัล</p>
+            <a href="#projects" class="btn">ดูผลงานของผม</a>
+        </div>
+    </section>
+
+    <!-- ส่วนเกี่ยวกับฉัน (About Section) -->
+    <section id="about" class="section">
+        <h2>เกี่ยวกับฉัน</h2>
+        <p class="about-text">
+            ผมมี Passion ในการเขียนโค้ดและพัฒนาเว็บไซต์ ชอบเรียนรู้เทคโนโลยีใหม่ๆ และมุ่งมั่นที่จะพัฒนาทักษะอยู่เสมอ พร้อมทำงานร่วมกับผู้อื่นและสร้างผลงานที่มีประโยชน์
+        </p>
+    </section>
+
+    <!-- ส่วนทักษะ (Skills Section) -->
+    <section id="skills" class="section bg-light">
+        <h2>ทักษะความสามารถ</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML / CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git / GitHub</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">UI/UX Design</div>
+        </div>
+    </section>
+
+    <!-- ส่วนผลงาน (Projects Section) -->
+    <section id="projects" class="section">
+        <h2>ผลงานเด่น (Projects)</h2>
+        <div class="projects-grid">
+
+            <!-- Card โปรเจกต์ที่ 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250/2c3e50/ffffff?text=Project+1" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Website</h3>
+                    <p>ระบบร้านค้าออนไลน์ รองรับการแสดงผลทุกอุปกรณ์ มีระบบตะกร้าสินค้าและการชำระเงิน</p>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-sm">Demo</a>
+                        <a href="#" target="_blank" class="btn-sm btn-outline">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card โปรเจกต์ที่ 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250/34495e/ffffff?text=Project+2" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>แอปพยากรณ์อากาศที่ดึงข้อมูลเรียลไทม์ผ่าน API รองรับการค้นหาตามชื่อเมือง</p>
+
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>REST API</span>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-sm">Demo</a>
+                        <a href="#" target="_blank" class="btn-sm btn-outline">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card โปรเจกต์ที่ 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250/7f8c8d/ffffff?text=Project+3" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Task Management Dashboard</h3>
+                    <p>ระบบจัดการงานและโปรเจกต์ มีฟีเจอร์ Drag & Drop และวิเคราะห์ความคืบหน้า</p>
+
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-sm">Demo</a>
+                        <a href="#" target="_blank" class="btn-sm btn-outline">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ส่วนการติดต่อ (Contact Section) -->
+    <section id="contact" class="section bg-light">
+        <h2>ติดต่องาน</h2>
+        <p>ยินดีพูดคุยและร่วมงานกัน สามารถติดต่อผ่านช่องทางด้านล่างนี้ได้เลยครับ</p>
+        <div class="contact-links">
+            <a href="mailto:your.email@example.com" class="btn">✉️ ส่งอีเมล</a>
+            <a href="https://github.com/your-username" target="_blank" class="btn btn-outline">🐱 GitHub</a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" class="btn btn-outline">💼 LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- ส่วนท้ายหน้าเว็บ (Footer) -->
+    <footer>
+        <p>© 2026 Designed & Built by [ชื่อของคุณ]. Built on GitHub Pages.</p>
+    </footer>
 
 </body>
 </html>
