@@ -171,10 +171,25 @@ ul {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* 1. จัดพื้นที่ครอบรูปภาพ (Container) */
+.project-img {
+    width: 100%;
+    height: 240px; /* หรือปรับความสูงตามชอบ */
+    background-color: #f1f5f9; /* ใส่สีพื้นหลังเทาอ่อนบางๆ */
+    padding: 12px; /* เพิ่มระยะขอบรอบๆ ไม่ให้รูปติดขอบการ์ด */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 2. จัดรูปแบบตัวรูปภาพ */
 .project-img img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain; /* สำคัญ! ป้องกันไม่ให้รูปถูกครอบตัด/ขยายจนแตก */
+    border-radius: 8px; /* ทำมุมรูปภาพให้มน */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* ใส่เงาเบาๆ ให้รูปดูมีมิติ */
 }
 
 .project-info {
